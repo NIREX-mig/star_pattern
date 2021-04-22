@@ -1,0 +1,125 @@
+/*parpus:-write a program to star pattern like this
+
+     *
+
+    ***
+
+   *****
+
+  *******
+
+ *********
+
+  *******
+
+   *****
+
+    ***
+
+     *
+
+     
+
+author:- ashish kumar (NIreX)
+
+date:-13/04/2021.    02:19:30
+
+  */
+
+#include<stdio.h>
+
+int main()
+
+{   int r;
+
+    int i=0;
+
+    int j=0;
+
+    printf("how many row are print: ");
+
+    scanf("%d",&r);
+
+    /*  for(int i=0; i<=r; i++)  //I dont know this trik is tric mad by mistak
+
+      {
+
+          for(int k=0; k<=r-i; k++)
+
+          {
+
+              printf(" ");
+
+          }
+
+          for(int j=0-i+1; j<=i-1; j++)
+
+          {
+
+              printf("*");
+
+          }
+
+          printf("\n");
+
+      }*/
+
+      for(int i=0;i<r;i++)   //my trick for trangle starpattern
+
+      {
+
+          for(int k=1; k<r-i; k++)
+
+          {
+
+              printf(" ");
+
+          }
+
+          for(int j=0;j<=i*2;j++)
+
+          {
+
+              printf("*");
+
+          }
+
+          printf("\n");
+
+      }
+
+    for(int i=r-1; i>=1; i--) //my trick for reverse trangle starpattern
+
+    {
+
+        for(int k=0; k<r-i; k++)
+
+        {
+
+            printf(" ");
+
+        }
+
+        for(int j=i; j<=i*2-1; j++)
+
+        {
+
+            printf("*");
+
+        }
+
+        for(int j=0;j<i-1;j++)
+
+        {
+
+            printf("*");
+
+        }
+
+        printf("\n");
+
+    }
+
+    return 0;
+
+}
