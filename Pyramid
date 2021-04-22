@@ -1,0 +1,55 @@
+/*parpus:-write a program to star pattern like this
+
+     *
+
+    ***
+
+   *****
+
+  *******
+
+ *********
+
+author:- ashish kumar (NIreX)
+
+date:-13/04/2021.    02:19:30
+
+  */
+
+#include<stdio.h>
+
+int main()
+
+{   int r;
+
+    printf("how many row are print: ");
+
+    scanf("%d",&r);
+
+    for(int i=0; i<=r; i++)
+
+    {
+
+        for(int k=0; k<=r-i; k++)
+
+        {
+
+            printf(" ");
+
+        }
+
+        for(int j=0-i+1; j<=i-1; j++)
+
+        {
+
+            printf("*");   
+
+        }
+
+        printf("\n");
+
+    }
+
+    return 0;
+
+}
